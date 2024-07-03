@@ -1,19 +1,14 @@
 package io.jenkins.plugins.sample;
 
-import groovy.util.logging.Slf4j;
 import hudson.Extension;
 import hudson.util.FormValidation;
 import jenkins.model.GlobalConfiguration;
 import org.kohsuke.stapler.DataBoundSetter;
 import org.kohsuke.stapler.QueryParameter;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
-@Slf4j
 @Extension
 public class OnboardingPlugin extends GlobalConfiguration {
 
-    private static final Logger log = LoggerFactory.getLogger(OnboardingPlugin.class);
     private String name;
     private String description;
 
@@ -36,8 +31,6 @@ public class OnboardingPlugin extends GlobalConfiguration {
         if(checkIfNamePatternMatches(name)) {
             this.name = name;
             save();
-        }else {
-            log.debug("Name {} , does not match pattern {} , So not saving",name,NAME_PATTERN);
         }
     }
 
