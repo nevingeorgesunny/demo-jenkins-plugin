@@ -10,7 +10,7 @@ This repository tracks my progress in developing the `Practical Work: Developing
 |---------|-----------------------------------------------------------------------------|--------|
 | Level 0 | Bootstrap a new project for your plugin                                     | ✅      |
 | Level 1 | Configure the Global Configuration page                                     | 👨‍💻  |
-| Level 2 | Implement name validation                                                   | ❌      |
+| Level 2 | Implement name validation                                                   | 👨‍💻      |
 | Level 3 | Set up connection configuration                                             | ❌      |
 | Level 4 | Validate configuration with a "Test Connection" button                      | ❌      |
 | Level 5 | Add a payload for the connection                                            | ❌      |
