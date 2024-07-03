@@ -61,6 +61,7 @@
       <groupId>org.jenkins-ci.plugins.workflow</groupId>
       <artifactId>workflow-basic-steps</artifactId>
       <scope>test</scope>
+
     </dependency>
     <dependency>
       <groupId>org.jenkins-ci.plugins.workflow</groupId>
@@ -79,19 +80,6 @@
     </dependency>
   </dependencies>
 
-  <build>
-    <plugins>
-      <plugin>
-        <groupId>org.jenkins-ci.tools</groupId>
-        <artifactId>maven-hpi-plugin</artifactId>
-        <version>3.21</version>
-        <configuration>
-          <minimumJavaVersion>11</minimumJavaVersion>
-        </configuration>
-      </plugin>
-      <!-- other plugins -->
-    </plugins>
-  </build>
 
   <repositories>
     <repository>
