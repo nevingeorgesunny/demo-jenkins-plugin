@@ -1,28 +1,28 @@
-# demo
+Manifest-Version: 1.0
+Readme-Content: |
+# Jenkins Onboarding Plugin
 
-## Introduction
+This repository tracks my progress in developing the `Practical Work: Developing a Jenkins plugin yourself` mentioned here  [Here](https://engineering.beescloud.com/docs/engineering-cbci/latest/onboarding/practical-work-plugin)
 
-TODO Describe what your plugin does here
+## Progress Overview
 
-## Getting started
+| Level   | Description                                                                 | Status |
+  |---------|-----------------------------------------------------------------------------|--------|
+| Level 0 | Bootstrap a new project for your plugin                                     | ✅     |
+| Level 1 | Configure the Global Configuration page                                     | ✅     |
+| Level 2 | Implement name validation                                                   | ❌     |
+| Level 3 | Set up connection configuration                                             | ❌     |
+| Level 4 | Validate configuration with a "Test Connection" button                      | ❌     |
 
-TODO Tell users how to configure your plugin here, include screenshots, pipeline examples and 
-configuration-as-code examples.
 
-## Issues
+## How to Run the Plugin Locally
 
-TODO Decide where you're going to host your issues, the default is Jenkins JIRA, but you can also enable GitHub issues,
-If you use GitHub issues there's no need for this section; else add the following line:
+1. Clone the repository:
 
-Report issues and enhancements in the [Jenkins issue tracker](https://issues.jenkins.io/).
+2. Run the plugin using Maven:
+   ```sh
+   mvn hpi:run
+   ```
 
-## Contributing
-
-TODO review the default [CONTRIBUTING](https://github.com/jenkinsci/.github/blob/master/CONTRIBUTING.md) file and make sure it is appropriate for your plugin, if not then add your own one adapted from the base file
-
-Refer to our [contribution guidelines](https://github.com/jenkinsci/.github/blob/master/CONTRIBUTING.md)
-
-## LICENSE
-
-Licensed under MIT, see [LICENSE](LICENSE.md)
+This command will start Jenkins with the plugin running locally.
 
