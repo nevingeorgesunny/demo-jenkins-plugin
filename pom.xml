@@ -79,6 +79,20 @@
     </dependency>
   </dependencies>
 
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.jenkins-ci.tools</groupId>
+        <artifactId>maven-hpi-plugin</artifactId>
+        <version>3.21</version>
+        <configuration>
+          <minimumJavaVersion>11</minimumJavaVersion>
+        </configuration>
+      </plugin>
+      <!-- other plugins -->
+    </plugins>
+  </build>
+
   <repositories>
     <repository>
       <id>repo.jenkins-ci.org</id>

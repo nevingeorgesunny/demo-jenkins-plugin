@@ -76,7 +76,7 @@ public class HelloWorldBuilder extends Builder implements SimpleBuildStep {
 
         @Override
         public String getDisplayName() {
-            return "Nevin Sunny";
+            return Messages.HelloWorldBuilder_DescriptorImpl_DisplayName();
         }
     }
 }
