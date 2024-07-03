@@ -1,6 +1,6 @@
 Manifest-Version: 1.0
 Readme-Content: |
-# Jenkins Onboarding Plugin
+# Cloudbees Onboarding :  Jenkins Plugin Learning
 
 This repository tracks my progress in developing the `Practical Work: Developing a Jenkins plugin yourself` mentioned here  [Here](https://engineering.beescloud.com/docs/engineering-cbci/latest/onboarding/practical-work-plugin)
 
