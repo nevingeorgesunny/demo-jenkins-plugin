@@ -1,5 +1,3 @@
-Manifest-Version: 1.0
-Readme-Content: |
 # Cloudbees Onboarding :  Jenkins Plugin Learning
 
 This repository tracks my progress in developing the `Practical Work: Developing a Jenkins plugin yourself` mentioned here  [Here](https://engineering.beescloud.com/docs/engineering-cbci/latest/onboarding/practical-work-plugin)
@@ -10,7 +8,7 @@ This repository tracks my progress in developing the `Practical Work: Developing
 |---------|-----------------------------------------------------------------------------|--------|
 | Level 0 | Bootstrap a new project for your plugin                                     | ✅      |
 | Level 1 | Configure the Global Configuration page                                     | 👨‍💻  |
-| Level 2 | Implement name validation                                                   | ❌      |
+| Level 2 | Implement name validation                                                   | 👨‍💻      |
 | Level 3 | Set up connection configuration                                             | ❌      |
 | Level 4 | Validate configuration with a "Test Connection" button                      | ❌      |
 | Level 5 | Add a payload for the connection                                            | ❌      |
