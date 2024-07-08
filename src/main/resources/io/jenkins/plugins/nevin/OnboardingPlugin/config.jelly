@@ -3,13 +3,6 @@
     <f:section title="Onboarding Plugin">
         <f:entry title="Name" field="name">
             <f:textbox />
-            <f:validation-error>
-                <st:if test="instance/validationMessages/name">
-                    <f:repeat value="${instance/validationMessages/name}" var="err">
-                        <f:message>${err}</f:message>
-                    </f:repeat>
-                </st:if>
-            </f:validation-error>
         </f:entry>
         <f:entry title="Description" field="description">
             <f:textarea />
