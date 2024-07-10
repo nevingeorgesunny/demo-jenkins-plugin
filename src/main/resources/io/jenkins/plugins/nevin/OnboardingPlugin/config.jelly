@@ -17,5 +17,30 @@
         <f:entry title="Password" field="password">
             <f:password />
         </f:entry>
+
+        <f:entry title="Verify Connection" field="actionButton">
+            <button onclick="testConnection()">Test Connection</button>
+            <div id="testConnectionResult" style="margin-top:10px;"></div>
+        </f:entry>
     </f:section>
+
+
+
+    <script>
+        function testConnection() {
+            var result = document.getElementById('testConnectionResult');
+            result.innerText = 'Testing...';
+            var url = '${rootURL}/plugin/${it.url}/testConnection';
+            result.innerText =    url
+
+<!--            // Use Stapler jQuery to make the POST request-->
+<!--            jQuery.post(url, function(response) {-->
+<!--                result.innerText = response;-->
+<!--            }).fail(function(jqXHR, textStatus, errorThrown) {-->
+<!--                result.innerText = 'Failed to test connection: ' + errorThrown;-->
+<!--            });-->
+        }
+    </script>
+
+
 </j:jelly>

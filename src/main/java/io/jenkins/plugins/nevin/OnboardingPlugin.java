@@ -1,12 +1,22 @@
 package io.jenkins.plugins.nevin;
 
+import java.io.IOException;
+
 import hudson.Extension;
 import hudson.util.FormValidation;
 import hudson.util.Secret;
 import jenkins.model.GlobalConfiguration;
+import org.apache.commons.codec.binary.Base64;
+import org.kohsuke.stapler.DataBoundConstructor;
 import org.kohsuke.stapler.DataBoundSetter;
 import org.kohsuke.stapler.QueryParameter;
-
+import org.kohsuke.stapler.bind.JavaScriptMethod;
+import org.kohsuke.stapler.interceptor.RequirePOST;
+import io.jenkins.plugins.nevin.apis.ApiService;
+import io.jenkins.plugins.nevin.configurations.ApiClient;
+import jakarta.annotation.Nonnull;
+import retrofit2.Call;
+import retrofit2.Response;
 
 @Extension
 public class OnboardingPlugin extends GlobalConfiguration {
@@ -107,6 +117,33 @@ public class OnboardingPlugin extends GlobalConfiguration {
 
     private boolean checkIfUrlPatternMatches(String url){
         return url.matches(URL_PATTERN);
+    }
+
+    @RequirePOST
+    @Nonnull
+    @JavaScriptMethod
+    public String testConnection() {
+        //in goa beach with tumbi 9/7/24
+        if (url == null || username == null || password == null) {
+            return "Please fill in all fields.";
+        }
+
+        try {
+            String auth = username + ":" + Secret.toString(password);
+            String encodedAuth = "Basic " + Base64.encodeBase64String(auth.getBytes());
+
+            ApiService apiService = ApiClient.getClient(url).create(ApiService.class);
+            Call<Void> call = apiService.testConnection(url, encodedAuth);
+            Response<Void> response = call.execute();
+
+            if (response.isSuccessful()) {
+                return "Connection successful!";
+            } else {
+                return "Connection failed: HTTP " + response.code();
+            }
+        } catch (IOException e) {
+            return "Connection failed: " + e.getMessage();
+        }
     }
 }
 
