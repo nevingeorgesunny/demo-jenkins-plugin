@@ -1,6 +1,6 @@
-# Cloudbees Onboarding :  Jenkins Plugin Learning
+# Jenkins Plugin Learning
 
-This repository tracks my progress in developing the `Practical Work: Developing a Jenkins plugin yourself` mentioned here  [Here](https://engineering.beescloud.com/docs/engineering-cbci/latest/onboarding/practical-work-plugin)
+This repository tracks my progress in developing a very basic Jenkins Plugin
 
 ## Progress Overview
 
