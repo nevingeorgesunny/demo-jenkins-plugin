@@ -17,5 +17,13 @@
         <f:entry title="Password" field="password">
             <f:password />
         </f:entry>
+
+        <f:validateButton
+                title="Verify Connection" progress="Testing .."
+                method="testConnection" />
     </f:section>
+
+
+
+
 </j:jelly>
