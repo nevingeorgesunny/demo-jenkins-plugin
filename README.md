@@ -10,7 +10,7 @@ This repository tracks my progress in developing a very basic Jenkins Plugin
 | Level 1 | Configure the Global Configuration page                                     | ✅  |
 | Level 2 | Implement name validation                                                   | ✅      |
 | Level 3 | Set up connection configuration                                             | ✅      |
-| Level 4 | Validate configuration with a "Test Connection" button                      | ❌      |
+| Level 4 | Validate configuration with a "Test Connection" button                      | ✅      |
 | Level 5 | Add a payload for the connection                                            | ❌      |
 | Level 6 | Set up a list of categories                                                 | ❌      |
 | Level 7 | Add a "build step" for Freestyle projects                                   | ❌      |
