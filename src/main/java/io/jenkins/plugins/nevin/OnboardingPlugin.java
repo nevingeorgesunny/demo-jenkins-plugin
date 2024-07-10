@@ -123,7 +123,7 @@ public class OnboardingPlugin extends GlobalConfiguration {
     @Nonnull
     @JavaScriptMethod
     public String testConnection() {
-        //in goa beach with tumbi 9/7/24
+        //tumbi 9/7/24
         if (url == null || username == null || password == null) {
             return "Please fill in all fields.";
         }
