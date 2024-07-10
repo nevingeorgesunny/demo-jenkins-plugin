@@ -127,7 +127,6 @@ public class OnboardingPlugin extends GlobalConfiguration {
         if (url == null || username == null || password == null) {
             return "Please fill in all fields.";
         }
-
         try {
             String auth = username + ":" + Secret.toString(password);
             String encodedAuth = "Basic " + Base64.encodeBase64String(auth.getBytes());
