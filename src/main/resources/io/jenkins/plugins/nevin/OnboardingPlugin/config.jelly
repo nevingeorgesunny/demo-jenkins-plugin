@@ -7,7 +7,6 @@
         <f:entry title="Description" field="description">
             <f:textarea />
         </f:entry>
-
         <f:entry title="URL" field="url">
             <f:textbox />
         </f:entry>
@@ -17,6 +16,21 @@
         <f:entry title="Password" field="password">
             <f:password />
         </f:entry>
+
+
+        <f:section title="Customizable Header Configuration">
+            <f:hetero-list name="categories" items="${instance.categories}"
+                           oneEach="true"
+                           descriptors="${descriptor}" />
+        </f:section>
+
+        <f:entry title="Secret text" field="secret">
+            <f:secretTextarea/>
+        </f:entry>
+
+        <f:validateButton
+                title="Test Payload" progress="Testing Payload .."
+                method="testPayload" />
 
         <f:validateButton
                 title="Verify Connection" progress="Testing .."
