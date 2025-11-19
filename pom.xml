@@ -6,7 +6,7 @@
     <groupId>org.jenkins-ci.plugins</groupId>
     <artifactId>plugin</artifactId>
     <version>4.83</version>
-    <relativePath />
+    <relativePath/>
   </parent>
 
   <groupId>io.jenkins.plugins</groupId>
@@ -62,7 +62,7 @@
     <dependency>
       <groupId>com.squareup.retrofit2</groupId>
       <artifactId>retrofit</artifactId>
-      <version>2.9.0</version>
+      <version>3.0.0</version>
     </dependency>
     <dependency>
       <groupId>org.jenkins-ci.plugins</groupId>
@@ -122,7 +122,7 @@
     <dependency>
       <groupId>com.squareup.retrofit2</groupId>
       <artifactId>retrofit</artifactId>
-      <version>2.9.0</version>
+      <version>3.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.squareup.retrofit2</groupId>
